@@ -168,7 +168,6 @@ ul li:hover {
 
 ul li:hover i {
 	color: #f80d47;
-
 }
 
 ul li a {
@@ -190,6 +189,8 @@ a:active {
 
 ul .pos-fix .fa {
 	opacity: 0;
+	postiion: relative;
+	left: -9001px;
 }
 
 ul li i.fa,
@@ -198,6 +199,11 @@ ul li i {
 	position: relative;
 	top: 1px;
 	margin-right: 8px;
+}
+
+ul li i.fa:hover,
+ul li i:hover {
+	color: #f80d47;
 
 }
 
@@ -216,13 +222,16 @@ ul li i {
 .icon-medium-logo {
 	position: absolute;
 	left: 0px;
+	width: 19px;
+	height: 22px;
 }
 
 .icon-medium-logo:before {
-	position: relative;
-	top: 0px;
-	left: -1.5px;
+	position: absolute;
+	top: 2px;
+	left: -1px;
 	width: 19px;
+	height: 22px;
 }
 
 @media screen and (max-width: 635px){
