@@ -83,7 +83,7 @@ i,
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	margin-top: 0;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	font-size: 64px;
 	color: #f80d47;
 }
@@ -91,14 +91,13 @@ h1 {
 h2 {
 	font-size: 24px;
 	color: #000;
-	margin-bottom: 16px;
+	margin-bottom: 24px;
 	margin-top: 0;
 }
 
 p {
 	font-size: 16px;
 	color: #000;
-	margin-bottom: 0;
 }
 
 .fade-in {
@@ -151,7 +150,7 @@ p {
 ul {
 	padding-left: 0;
 	list-style: none;
-	padding-top: 16px;
+	margin-top: 24px;
 	/*padding-bottom: 64px;*/
 
 }
@@ -169,6 +168,7 @@ ul li:hover {
 
 ul li:hover i {
 	color: #f80d47;
+
 }
 
 ul li a {
@@ -180,9 +180,12 @@ ul li a:hover {
 	text-decoration: none;
 }
 
-ul li a.main-trigger:hover i {
-	color: #f80d47;
+a:focus {
+	outline: none;
+}
+a:active {
 	text-decoration: none;
+	color: #000;
 }
 
 ul .pos-fix .fa {
@@ -192,6 +195,10 @@ ul .pos-fix .fa {
 ul li i.fa,
 ul li i {
 	font-size: 22px;
+	position: relative;
+	top: 1px;
+	margin-right: 8px;
+
 }
 
 .text-detail {
@@ -213,7 +220,8 @@ ul li i {
 
 .icon-medium-logo::before {
 	position: relative;
-	left: -2px;
+	top: 0px;
+	left: -1px;
 	width: 21px;
 }
 
