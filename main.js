@@ -21,7 +21,6 @@ $(document).ready(function() {
 		
 	}
 
-
 	centerContent()
 	// $(".content-left-effect, .content-right-effect").height($(".fade-in").innerHeight())
 	$(".content-left-effect, .content-right-effect").css("max-height", $(".fade-in").innerHeight())
