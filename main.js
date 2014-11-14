@@ -21,17 +21,6 @@ $(document).ready(function() {
 		
 	}
 
-	$("ul li a").click(function() {
-		$(this).data("clicked", true)
-	})
-
-	$("ul li").click(function() {
-		
-		if ($("ul li a").data("clicked") == false) {
-			document.location.href = $(this).attr("data-href")
-		}
-	})
-
 	centerContent()
 	// $(".content-left-effect, .content-right-effect").height($(".fade-in").innerHeight())
 	$(".content-left-effect, .content-right-effect").css("max-height", $(".fade-in").innerHeight())
