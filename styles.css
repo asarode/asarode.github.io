@@ -218,11 +218,11 @@ ul li i {
 	left: 0px;
 }
 
-.icon-medium-logo::before {
+.icon-medium-logo:before {
 	position: relative;
 	top: 0px;
-	left: -1px;
-	width: 21px;
+	left: -1.5px;
+	width: 19px;
 }
 
 @media screen and (max-width: 635px){
