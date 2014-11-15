@@ -197,7 +197,6 @@ ul .pos-fix span {
 	font-style: normal;
 	position: relative;
 	top: -3px;
-	left: 21px;
 }
 
 ul li i.fa,
@@ -223,6 +222,9 @@ ul li i {
 .text-subheader {
 	font-family: 'Varela Round', sans-serif;
 	margin-left: 8px;
+	font-size: 16px;
+	position: relative;
+	top: -2px;
 }
 
 .icon-medium-logo {
