@@ -161,18 +161,19 @@ ul li {
 	font-size: 16px;
 }
 
-ul li:hover {
+/*ul li:hover {
 	cursor: hand;
 	cursor: pointer;
 }
 
 ul li:hover i {
 	color: #f80d47;
-
 }
+*/
 
 ul li a {
 	color: #000;
+	z-index: 1000;
 }
 
 ul li a:hover {
@@ -189,14 +190,21 @@ a:active {
 }
 
 ul .pos-fix .fa {
-	opacity: 0;
+	visibility: hidden;
+}
+
+ul .pos-fix span {
+	font-style: normal;
+	position: relative;
+	top: -3px;
+	left: 21px;
 }
 
 ul li i.fa,
 ul li i {
 	font-size: 22px;
 	position: relative;
-	top: 1px;
+	top: 2px;
 	margin-right: 8px;
 
 }
@@ -212,6 +220,10 @@ ul li i {
 	text-decoration: none;
 }
 
+.text-subheader {
+	font-family: 'Varela Round', sans-serif;
+	margin-left: 8px;
+}
 
 .icon-medium-logo {
 	position: absolute;
@@ -225,15 +237,38 @@ ul li i {
 	width: 19px;
 }
 
+.large-only-inline{
+	display: inline;
+}
+
+i span {
+		display: none;
+	}
+
 @media screen and (max-width: 635px){
 	ul li i.fa,
 	ul li i {
 		display: block;
 	}
 
+	i {
+		margin-bottom: 4px;
+		color: #f80d47;
+	}
+	
+	i span {
+		display: inline;
+	}
+
 	ul li {
 		padding-bottom: 16px;
 	}
+
+	.large-only {
+		display: none;
+	}
+
+
 
 }
 

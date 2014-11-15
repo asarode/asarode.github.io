@@ -21,6 +21,18 @@ $(document).ready(function() {
 		
 	}
 
+	// $("ul li a").click(function() {	var isHovered = $("ul li").find("#element:hover").length;
+
+	// 	$(this).data("clicked", true)
+	// })
+
+	// $("ul li").click(function() {
+	// 	if (!!$(this).find("a:hover").length > 0) {
+	// 		document.location.href = $(this).attr("data-href")
+	// 	}
+			
+	// })
+
 	centerContent()
 	// $(".content-left-effect, .content-right-effect").height($(".fade-in").innerHeight())
 	$(".content-left-effect, .content-right-effect").css("max-height", $(".fade-in").innerHeight())
