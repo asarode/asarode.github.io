@@ -161,7 +161,7 @@ ul li {
 	font-size: 16px;
 }
 
-/*ul li:hover {
+ul li:hover {
 	cursor: hand;
 	cursor: pointer;
 }
@@ -169,7 +169,7 @@ ul li {
 ul li:hover i {
 	color: #f80d47;
 }
-*/
+
 
 ul li a {
 	color: #000;
