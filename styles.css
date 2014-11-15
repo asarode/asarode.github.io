@@ -248,6 +248,7 @@ i span {
 	}
 
 @media screen and (max-width: 635px){
+
 	ul li i.fa,
 	ul li i {
 		display: block;

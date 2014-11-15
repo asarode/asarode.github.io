@@ -17,6 +17,9 @@ $(document).ready(function() {
 		console.log(contentHeight)
 		if (fullHeight > contentHeight) {
 			$(".main-wrapper").css("margin-top", marginPush)
+		} else {
+			$(".main-wrapper").css("padding-top", "40px")
+			$(".main-wrapper").css("padding-bottom", "40px")
 		}
 		
 	}
