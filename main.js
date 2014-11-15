@@ -17,7 +17,10 @@ $(document).ready(function() {
 		console.log(contentHeight)
 		if (fullHeight > contentHeight) {
 			$(".main-wrapper").css("margin-top", marginPush)
+			$(".main-wrapper").css("padding-top", "0px")
+			$(".main-wrapper").css("padding-bottom", "0px")
 		} else {
+			$(".main-wrapper").css("margin-top", "0px")
 			$(".main-wrapper").css("padding-top", "40px")
 			$(".main-wrapper").css("padding-bottom", "40px")
 		}
