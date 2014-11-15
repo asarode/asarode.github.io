@@ -1,6 +1,6 @@
 body {
 	font-family: 'Varela Round', sans-serif;
-	background-color: #fafafa;
+	background-color: #fff;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -8,6 +8,7 @@ body {
 	left: 0;
 	padding-top: 0;
 	color: #000;
+	padding-bottom: 200px;
 }
 
 @keyframes contentTopLineEffect {
@@ -69,7 +70,6 @@ i,
 }
 
 .main-wrapper {
-
 	margin-right: auto;
 	margin-left: auto;
 	width: 80%;
@@ -253,8 +253,49 @@ i span {
 		display: none;
 	}
 
-@media screen and (max-width: 692px){
 
+.preview-content {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 18px;
+	width: 200px;
+	height: 200px;
+	background-color: #fafafa;
+
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.15);
+	border-radius: 4px 0px 0px 4px;
+
+	background-image: none;
+	background-size: 100% 100%;
+	
+	transition: right 500ms ease;
+	/*opacity: 0;*/
+	display: relative;
+	right: -100%;
+}
+
+.preview-content p {
+	padding: 8px;
+}
+
+.preview-content.show {
+	transition: right 250ms ease;
+	/*opacity: 1;*/
+	right: 0;
+}
+
+
+@media screen and (max-width: 961px) {
+	
+}
+
+@media screen and (max-width: 692px){
+	
+	.preview-content,
+	.preview-content.show {
+		visibility: hidden;
+	}
 	ul li i.fa,
 	ul li i {
 		display: block;
@@ -276,8 +317,6 @@ i span {
 	.large-only {
 		display: none;
 	}
-
-
 
 }
 

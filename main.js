@@ -22,31 +22,53 @@ $(document).ready(function() {
 		} else {
 			$(".main-wrapper").css("margin-top", "0px")
 			$(".main-wrapper").css("padding-top", "40px")
-			$(".main-wrapper").css("padding-bottom", "40px")
+			$(".main-wrapper").css("padding-bottom", "100px")
 		}
 		
 	}
 
-	// $("ul li a").click(function() {	var isHovered = $("ul li").find("#element:hover").length;
-
-	// 	$(this).data("clicked", true)
-	// })
-
-	// $("ul li").click(function() {
-	// 	if (!!$(this).find("a:hover").length > 0) {
-	// 		document.location.href = $(this).attr("data-href")
-	// 	}
-			
-	// })
 
 	centerContent()
-	// $(".content-left-effect, .content-right-effect").height($(".fade-in").innerHeight())
-	$(".content-left-effect, .content-right-effect").css("max-height", $(".fade-in").innerHeight())
 
-	// $(".content-left-effect").height($(".main-wrapper").height())
-	// $(".content-left-effect").css("margin-top", getMarginPush() + $("h1").outerHeight(true))
+	$(".content-left-effect, .content-right-effect").css("max-height", $(".fade-in").innerHeight())
 	$(".fade-in").hide()
 	$(".fade-in").fadeIn(750)
+
+
+
+	$(".preview-switcher").hover(
+		function() {
+			if ($(window).width() > 961) {
+				$(".preview-content").css("top", $(this).offset().top - $(window).scrollTop() - 100)
+			} else {
+				$(".preview-content").css("top", 18)
+			}
+			$(".preview-content p").text("")
+			$(".preview-content").css("background-image", "url(" + $(this).attr("data-img") + ")")
+			$(".preview-content").toggleClass("show")
+		},
+		function() {
+			$(".preview-content").toggleClass("show")
+		}
+	)
+
+
+	$(".preview-switcher-text").hover(
+		function() {
+			if ($(window).width() > 961) {
+				$(".preview-content").css("top", $(this).offset().top - $(window).scrollTop() - 100)
+			} else {
+				$(".preview-content").css("top", 18)
+			}
+			
+			$(".preview-content").css("background-image", "none")
+			$(".preview-content p").text($(this).attr("data-text"))
+			$(".preview-content").toggleClass("show")
+		},
+		function() {
+			$(".preview-content").toggleClass("show")
+		}
+	)
 
 
 	$(window).resize(function() {
