@@ -364,9 +364,9 @@ li i {
 	-webkit-animation: borderColorFade 1500ms ease-in-out forwards;
 	        animation: borderColorFade 1500ms ease-in-out forwards;
 
-	-webkit-animation-delay: 750ms;
+	-webkit-animation-delay: 400ms;
 
-	        animation-delay: 750ms;
+	        animation-delay: 400ms;
 }
 
 #favs-background span {
@@ -380,9 +380,9 @@ li i {
 	-webkit-animation: colorFade 1500ms ease-in-out forwards;
 	        animation: colorFade 1500ms ease-in-out forwards;
 
-	-webkit-animation-delay: 750ms;
+	-webkit-animation-delay: 400ms;
 
-	        animation-delay: 750ms;
+	        animation-delay: 400ms;
 }
 
 @media screen and (max-width: 692px){
