@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$(".content-left-effect, .content-right-effect").css("max-height", $(".fade-in").innerHeight())
+	// $(".content-left-effect, .content-right-effect").css("max-height", $(".fade-in").innerHeight())
 
 
 	$(".preview-switcher").hover(

@@ -62,23 +62,27 @@ body {
 }
 
 @-webkit-keyframes colorFade {
-	0% { color: rgba(248, 13, 71, 0.12); }
+	0% { color: rgba(0, 0, 0, 0); }
+	50% { color: rgba(248, 13, 71, 0.3); }
 	100% { color: rgba(0, 0, 0, 0.12); }
 }
 
 @keyframes colorFade {
-	0% { color: rgba(248, 13, 71, 0.12); }
+	0% { color: rgba(0, 0, 0, 0); }
+	50% { color: rgba(248, 13, 71, 0.3); }
 	100% { color: rgba(0, 0, 0, 0.12); }
 }
 
 @-webkit-keyframes borderColorFade {
-	0% { border-color: rgba(248, 13, 71, 0.12); }
-	100% { border-color: rgba(0, 0, 0, 0.05); }
+	0% { border-color: rgba(0, 0, 0, 0); }
+	50% { border-color: rgba(248, 13, 71, 0.3); }
+	100% { border-color: rgba(0, 0, 0, 0.12); }
 }
 
 @keyframes borderColorFade {
-	0% { border-color: rgba(248, 13, 71, 0.12); }
-	100% { border-color: rgba(0, 0, 0, 0.05); }
+	0% { border-color: rgba(0, 0, 0, 0); }
+	50% { border-color: rgba(248, 13, 71, 0.3); }
+	100% { border-color: rgba(0, 0, 0, 0.12); }
 }
 
 
@@ -101,8 +105,6 @@ h1 {
 	margin-bottom: 40px;
 	font-size: 64px;
 	color: #f80d47;
-	-webkit-animation: fadeIn 2000ms ease;
-	        animation: fadeIn 2000ms ease;
 }
 
 h2 {
@@ -350,21 +352,25 @@ li i {
 	max-height: 40vh;
 	background: #fcfcfc;
 	overflow: hidden;
-	border-bottom: 1px solid rgba(248, 13, 71, 0.12);
-	-webkit-animation: borderColorFade 5000ms ease forwards;
-	        animation: borderColorFade 5000ms ease forwards;
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+	-webkit-animation: borderColorFade 1500ms ease-in-out forwards;
+	        animation: borderColorFade 1500ms ease-in-out forwards;
+
+	animation-delay: 750ms;
 }
 
 #favs-background span {
-	color: rgba(248, 13, 71, 0.12);
+	color: rgba(0, 0, 0, 0.0);
 	display: inline-block;
 	font-weight: bold;
 	line-height: 2.4;
 	padding: 12px 4px;
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
-	-webkit-animation: colorFade 5000ms ease forwards;
-	        animation: colorFade 5000ms ease forwards;
+	-webkit-animation: colorFade 1500ms ease-in-out forwards;
+	        animation: colorFade 1500ms ease-in-out forwards;
+
+	animation-delay: 750ms;
 }
 
 @media screen and (max-width: 692px){
