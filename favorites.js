@@ -58,9 +58,10 @@ $(document).ready(function() {
 			});
 		}
 		
-		var favItem = $('<span>' + favText + '</span>')
-		favContainer.append(favItem);
-		favContainer.appendTo('#favs-background-wrapper');
+		$('#favs-background span').text(favText);
+		// var favItem = $('<span>' + favText + '</span>')
+		// favContainer.append(favItem);
+		// favContainer.appendTo('#favs-background-wrapper');
 	}
 
 	// http://stackoverflow.com/a/2450976
