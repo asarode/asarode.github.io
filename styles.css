@@ -353,8 +353,6 @@ li i {
 	border-bottom: 1px solid rgba(248, 13, 71, 0.12);
 	-webkit-animation: borderColorFade 5000ms ease forwards;
 	        animation: borderColorFade 5000ms ease forwards;
-	-webkit-animation-delay: 2s;
-	        animation-delay: 2s;
 }
 
 #favs-background span {
@@ -367,8 +365,6 @@ li i {
 	font-family: 'Montserrat', sans-serif;
 	-webkit-animation: colorFade 5000ms ease forwards;
 	        animation: colorFade 5000ms ease forwards;
-	-webkit-animation-delay: 2s;
-	        animation-delay: 2s;
 }
 
 @media screen and (max-width: 692px){
