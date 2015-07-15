@@ -129,12 +129,10 @@ p {
 	height: 1px;
 	background-color: #f80d47;
 	
-	-webkit-animation: contentTopLineEffect 750ms ease-out;
-	
-	        animation: contentTopLineEffect 750ms ease-out;
+	-webkit-animation: contentTopLineEffect 750ms linear;
+			animation: contentTopLineEffect 750ms linear;
 	-webkit-animation-delay: 250ms;
 	        animation-delay: 250ms;
-	-webkit-animation: contentTopLineEffect 750ms ease-out;
 }
 
 .content-bottom-effect {
@@ -144,12 +142,10 @@ p {
 	height: 1px;
 	background-color: #f80d47;
 	
-	-webkit-animation: contentBottomLineEffect 750ms ease-out;
-	
-	        animation: contentBottomLineEffect 750ms ease-out;
+	-webkit-animation: contentBottomLineEffect 750ms linear;
+			animation: contentBottomLineEffect 750ms linear;
 	-webkit-animation-delay: 250ms;
 	        animation-delay: 250ms;
-	-webkit-animation: contentBottomLineEffect 750ms ease-out;
 }
 
 .content-left-effect {
@@ -159,12 +155,10 @@ p {
 	width: 1px;
 	background-color: #f80d47;
 	
-	-webkit-animation: contentLeftLineEffect 750ms ease-out;
-	
-	        animation: contentLeftLineEffect 750ms ease-out;
+	-webkit-animation: contentLeftLineEffect 750ms linear;
+			animation: contentLeftLineEffect 750ms linear;
 	-webkit-animation-delay: 250ms;
 	        animation-delay: 250ms;
-	-webkit-animation: contentLeftLineEffect 750ms ease-out;
 }
 
 .content-right-effect {
@@ -174,12 +168,10 @@ p {
 	width: 1px;
 	background-color: #f80d47;
 	
-	-webkit-animation: contentRightLineEffect 750ms ease-out;
-	
-	        animation: contentRightLineEffect 750ms ease-out;
+	-webkit-animation: contentRightLineEffect 750ms linear;
+			animation: contentRightLineEffect 750ms linear;
 	-webkit-animation-delay: 250ms;
 	        animation-delay: 250ms;
-	-webkit-animation: contentRightLineEffect 750ms ease-out;
 }
 
 ul {
