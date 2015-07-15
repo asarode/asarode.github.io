@@ -8,46 +8,46 @@ body {
 }
 
 @keyframes contentTopLineEffect {
-	0% { width: 0%; left: -100%; }
-	50% { width: 50%; left: 0%; }
+	0% { width: 0%; left: 0%; }
+	50% { width: 25%; left: 50%; }
 	100% { width: 0%; left: 100%; }
 }
 @-webkit-keyframes contentTopLineEffect {
-	0% { width: 0%; left: -100%; }
-	50% { width: 50%; left: 0%; }
+	0% { width: 0%; left: 0%; }
+	50% { width: 25%; left: 50%; }
 	100% { width: 0%; left: 100%; }
 }
 
 @keyframes contentBottomLineEffect {
-	0% { width: 0%; left: 200%;}
-	50% { width: 50%; left: 100%;}
+	0% { width: 0%; left: 100%;}
+	50% { width: 25%; left: 50%;}
 	100% { width: 0%; left: 0%;}
 }
 @-webkit-keyframes contentBottomLineEffect {
-	0% { width: 0%; left: 200%;}
-	50% { width: 50%; left: 100%;}
+	0% { width: 0%; left: 100%;}
+	50% { width: 25%; left: 50%;}
 	100% { width: 0%; left: 0%;}
 }
 
 @keyframes contentLeftLineEffect {
-	0% { height: 0%; top: 200%;}
-	50% { height: 50%; top: 100%; }
+	0% { height: 0%; top: 100%;}
+	50% { height: 25%; top: 50%; }
 	100% { height: 0%; top: 0%; }
 }
 @-webkit-keyframes contentLeftLineEffect {
-	0% { height: 0%; top: 200%;}
-	50% { height: 50%; top: 100%; }
+	0% { height: 0%; top: 100%;}
+	50% { height: 25%; top: 50%; }
 	100% { height: 0%; top: 0%; }
 }
 
 @keyframes contentRightLineEffect {
-	0% { height: 0%; top: -100%; }
-	50% { height: 50%; top: 0%; }
+	0% { height: 0%; top: 0%; }
+	50% { height: 25%; top: 50%; }
 	100% { height: 0%; top: 100%; }
 }
 @-webkit-keyframes contentRightLineEffect {
-	0% { height: 0%; top: -100%; }
-	50% { height: 50%; top: 0%; }
+	0% { height: 0%; top: 0%; }
+	50% { height: 25%; top: 50%; }
 	100% { height: 0%; top: 100%; }
 }
 
@@ -129,8 +129,8 @@ p {
 	height: 1px;
 	background-color: #f80d47;
 	
-	-webkit-animation: contentTopLineEffect 750ms linear;
-			animation: contentTopLineEffect 750ms linear;
+	-webkit-animation: contentTopLineEffect 500ms linear;
+			animation: contentTopLineEffect 500ms linear;
 	-webkit-animation-delay: 250ms;
 	        animation-delay: 250ms;
 }
@@ -142,8 +142,8 @@ p {
 	height: 1px;
 	background-color: #f80d47;
 	
-	-webkit-animation: contentBottomLineEffect 750ms linear;
-			animation: contentBottomLineEffect 750ms linear;
+	-webkit-animation: contentBottomLineEffect 500ms linear;
+			animation: contentBottomLineEffect 500ms linear;
 	-webkit-animation-delay: 250ms;
 	        animation-delay: 250ms;
 }
@@ -155,8 +155,8 @@ p {
 	width: 1px;
 	background-color: #f80d47;
 	
-	-webkit-animation: contentLeftLineEffect 750ms linear;
-			animation: contentLeftLineEffect 750ms linear;
+	-webkit-animation: contentLeftLineEffect 500ms linear;
+			animation: contentLeftLineEffect 500ms linear;
 	-webkit-animation-delay: 250ms;
 	        animation-delay: 250ms;
 }
@@ -168,8 +168,8 @@ p {
 	width: 1px;
 	background-color: #f80d47;
 	
-	-webkit-animation: contentRightLineEffect 750ms linear;
-			animation: contentRightLineEffect 750ms linear;
+	-webkit-animation: contentRightLineEffect 500ms linear;
+			animation: contentRightLineEffect 500ms linear;
 	-webkit-animation-delay: 250ms;
 	        animation-delay: 250ms;
 }
