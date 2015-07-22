@@ -4,49 +4,50 @@ body {
 	padding-top: 100px;
 	padding-bottom: 50px;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 @keyframes contentTopLineEffect {
-	0% { width: 0%; left: -100%; }
-	50% { width: 50%; left: 0%; }
+	0% { width: 0%; left: 0%; }
+	50% { width: 25%; left: 50%; }
 	100% { width: 0%; left: 100%; }
 }
 @-webkit-keyframes contentTopLineEffect {
-	0% { width: 0%; left: -100%; }
-	50% { width: 50%; left: 0%; }
+	0% { width: 0%; left: 0%; }
+	50% { width: 25%; left: 50%; }
 	100% { width: 0%; left: 100%; }
 }
 
 @keyframes contentBottomLineEffect {
-	0% { width: 0%; left: 200%;}
-	50% { width: 50%; left: 100%;}
+	0% { width: 0%; left: 100%;}
+	50% { width: 25%; left: 50%;}
 	100% { width: 0%; left: 0%;}
 }
 @-webkit-keyframes contentBottomLineEffect {
-	0% { width: 0%; left: 200%;}
-	50% { width: 50%; left: 100%;}
+	0% { width: 0%; left: 100%;}
+	50% { width: 25%; left: 50%;}
 	100% { width: 0%; left: 0%;}
 }
 
 @keyframes contentLeftLineEffect {
-	0% { height: 0%; top: 200%;}
-	50% { height: 50%; top: 100%; }
+	0% { height: 0%; top: 100%;}
+	50% { height: 25%; top: 50%; }
 	100% { height: 0%; top: 0%; }
 }
 @-webkit-keyframes contentLeftLineEffect {
-	0% { height: 0%; top: 200%;}
-	50% { height: 50%; top: 100%; }
+	0% { height: 0%; top: 100%;}
+	50% { height: 25%; top: 50%; }
 	100% { height: 0%; top: 0%; }
 }
 
 @keyframes contentRightLineEffect {
-	0% { height: 0%; top: -100%; }
-	50% { height: 50%; top: 0%; }
+	0% { height: 0%; top: 0%; }
+	50% { height: 25%; top: 50%; }
 	100% { height: 0%; top: 100%; }
 }
 @-webkit-keyframes contentRightLineEffect {
-	0% { height: 0%; top: -100%; }
-	50% { height: 50%; top: 0%; }
+	0% { height: 0%; top: 0%; }
+	50% { height: 25%; top: 50%; }
 	100% { height: 0%; top: 100%; }
 }
 
@@ -62,17 +63,12 @@ body {
 
 @-webkit-keyframes colorFade {
 	0% { color: rgba(248, 13, 71, 0.3); }
-	100% { color: rgba(0, 0, 0, 0.12); }
+	100% { color: rgba(210, 210, 210, .12); }
 }
 
 @keyframes colorFade {
 	0% { color: rgba(248, 13, 71, 0.3); }
-	100% { color: rgba(0, 0, 0, 0.12); }
-}
-
-@keyframes mainEntrance {
-	0% { border-color: rgba(255, 255, 255, 0); transform: translateY(10px); }
-	100% { border-color: #f5f5f5; transform: translateY(0); }
+	100% { color: rgba(210, 210, 210, .12); }
 }
 
 .text-detail {
@@ -85,14 +81,11 @@ body {
 	width: 90%;
 	max-width: 720px;
 	background: #fff;
-	/*box-shadow: 0px 0px 200px 100px rgba(255,255,255,1);*/
 	padding: 36px 48px;
 	border-radius: 8px;
-	border: 1px solid white;
+	border: 1px solid #f5f5f5;
+	border-radius: 8px;
 	box-sizing: border-box;
-
-	animation: mainEntrance 750ms ease forwards;
-	/*animation-delay: 750ms;*/
 }
 
 h1 {
@@ -136,12 +129,10 @@ p {
 	height: 1px;
 	background-color: #f80d47;
 	
-	-webkit-animation: contentTopLineEffect 750ms ease-out;
-	
-	        animation: contentTopLineEffect 750ms ease-out;
+	-webkit-animation: contentTopLineEffect 500ms linear;
+			animation: contentTopLineEffect 500ms linear;
 	-webkit-animation-delay: 250ms;
 	        animation-delay: 250ms;
-	-webkit-animation: contentTopLineEffect 750ms ease-out;
 }
 
 .content-bottom-effect {
@@ -151,12 +142,10 @@ p {
 	height: 1px;
 	background-color: #f80d47;
 	
-	-webkit-animation: contentBottomLineEffect 750ms ease-out;
-	
-	        animation: contentBottomLineEffect 750ms ease-out;
+	-webkit-animation: contentBottomLineEffect 500ms linear;
+			animation: contentBottomLineEffect 500ms linear;
 	-webkit-animation-delay: 250ms;
 	        animation-delay: 250ms;
-	-webkit-animation: contentBottomLineEffect 750ms ease-out;
 }
 
 .content-left-effect {
@@ -166,12 +155,10 @@ p {
 	width: 1px;
 	background-color: #f80d47;
 	
-	-webkit-animation: contentLeftLineEffect 750ms ease-out;
-	
-	        animation: contentLeftLineEffect 750ms ease-out;
+	-webkit-animation: contentLeftLineEffect 500ms linear;
+			animation: contentLeftLineEffect 500ms linear;
 	-webkit-animation-delay: 250ms;
 	        animation-delay: 250ms;
-	-webkit-animation: contentLeftLineEffect 750ms ease-out;
 }
 
 .content-right-effect {
@@ -181,12 +168,10 @@ p {
 	width: 1px;
 	background-color: #f80d47;
 	
-	-webkit-animation: contentRightLineEffect 750ms ease-out;
-	
-	        animation: contentRightLineEffect 750ms ease-out;
+	-webkit-animation: contentRightLineEffect 500ms linear;
+			animation: contentRightLineEffect 500ms linear;
 	-webkit-animation-delay: 250ms;
 	        animation-delay: 250ms;
-	-webkit-animation: contentRightLineEffect 750ms ease-out;
 }
 
 ul {
@@ -349,12 +334,12 @@ li i {
 }
 
 #favs-background-shadow {
-	height: 8vh;
+	height: 10vh;
 	min-height: 50px;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%);
 }
 
 #favs-background {
@@ -366,20 +351,23 @@ li i {
 	max-height: 40vh;
 	background: #fcfcfc;
 	overflow: hidden;
-	box-shadow: inset 0px -81px 40px -70px rgba(255,255,255,1);
 }
 
 #favs-background span {
-	color: rgba(0, 0, 0, 0.12);
+	color: #dadada;
 	display: inline-block;
 	font-weight: bold;
 	line-height: 2.4;
-	padding: 12px 4px;
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 	opacity: 0;
-	animation: fadeIn 750ms ease forwards;
-	animation-delay: 500ms;
+	-webkit-animation: fadeIn 750ms ease;
+	        animation: fadeIn 750ms ease;
+		 -webkit-animation-fill-mode: forwards;
+		         animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-delay: 500ms;
+	        animation-delay: 500ms;
 }
 
 @media screen and (max-width: 692px){
