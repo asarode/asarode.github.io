@@ -412,10 +412,6 @@ ul.link-list > li i {
 		margin-bottom: 4px;
 		color: #f80d47;
 	}
-
-	ul.link-list > li {
-		margin-bottom: 48px;
-	}
 	
 	.text-list-item {
 		display: inline-block;
